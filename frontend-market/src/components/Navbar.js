@@ -118,10 +118,9 @@ const Navbar = () => {
                       letterSpacing: '-0.5px'
                     }}
                   >
-                    PREDICT<span style={{ color: '#7c3aed' }}>X</span>
+                    Prysm<span style={{ color: 'white' }}></span>
                   </Box>
                   <Box sx={{ fontSize: 10, color: '#888', letterSpacing: '1px' }}>
-                    DECENTRALIZED PREDICTIONS
                   </Box>
                 </Box>
               </motion.div>

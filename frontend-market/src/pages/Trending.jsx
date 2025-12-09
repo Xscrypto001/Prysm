@@ -124,7 +124,7 @@ const Trending = () => {
     <TableRow
       sx={{
         '&:hover': {
-          background: 'rgba(124, 58, 237, 0.05)',
+          background: '124, 58, 237, 0.05)',
         }
       }}
     >
@@ -134,14 +134,13 @@ const Trending = () => {
             sx={{
               width: 32,
               height: 32,
-              borderRadius: '50%',
               background: index < 3 
-                ? 'linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)'
-                : 'rgba(255, 255, 255, 0.05)',
+                ? ''
+                : '255, 255, 255, 0.05)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: index < 3 ? 'white' : 'rgba(255, 255, 255, 0.7)',
+              color: index < 3 ? 'white' : '255, 255, 255, 0.7)',
               fontWeight: 700,
               fontSize: 14,
             }}
@@ -162,9 +161,6 @@ const Trending = () => {
                 label={market.category}
                 size="small"
                 sx={{
-                  background: 'rgba(124, 58, 237, 0.1)',
-                  color: '#7c3aed',
-                  fontSize: 11,
                   height: 20,
                 }}
               />
@@ -174,7 +170,6 @@ const Trending = () => {
                   label="Hot"
                   size="small"
                   sx={{
-                    background: 'rgba(245, 158, 11, 0.15)',
                     color: '#f59e0b',
                     fontSize: 11,
                     height: 20,
@@ -197,8 +192,8 @@ const Trending = () => {
           size="small"
           sx={{
             background: market.change.startsWith('+') 
-              ? 'rgba(16, 185, 129, 0.15)' 
-              : 'rgba(239, 68, 68, 0.15)',
+              ? '16, 185, 129, 0.15)' 
+              : '239, 68, 68, 0.15)',
             color: market.change.startsWith('+') ? '#10b981' : '#ef4444',
             fontWeight: 600,
             fontSize: 12,
@@ -207,7 +202,7 @@ const Trending = () => {
       </TableCell>
       <TableCell>
         <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-          <People sx={{ fontSize: 16, color: 'rgba(255, 255, 255, 0.5)' }} />
+          <People sx={{ fontSize: 16, color: '255, 255, 255, 0.5)' }} />
           <Typography variant="body2">
             {market.participants.toLocaleString()}
           </Typography>
@@ -220,11 +215,11 @@ const Trending = () => {
             value={market.yesOdds * 100}
             sx={{
               height: 8,
-              borderRadius: 4,
-              backgroundColor: 'rgba(239, 68, 68, 0.2)',
+             
+              backgroundColor: '239, 68, 68, 0.2)',
               '& .MuiLinearProgress-bar': {
-                background: 'linear-gradient(90deg, #10b981 0%, #34d399 100%)',
-                borderRadius: 4,
+                
+               
               }
             }}
           />
@@ -244,7 +239,7 @@ const Trending = () => {
             px: 2,
             py: 0.5,
             '&:hover': {
-              background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+              background: '',
             }
           }}
         >
@@ -258,7 +253,7 @@ const Trending = () => {
     <TableRow
       sx={{
         '&:hover': {
-          background: 'rgba(124, 58, 237, 0.05)',
+          background: '124, 58, 237, 0.05)',
         }
       }}
     >
@@ -271,11 +266,11 @@ const Trending = () => {
               borderRadius: '50%',
               background: index < 3 
                 ? 'linear-gradient(135deg, #10b981 0%, #34d399 100%)'
-                : 'rgba(255, 255, 255, 0.05)',
+                : '255, 255, 255, 0.05)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: index < 3 ? 'white' : 'rgba(255, 255, 255, 0.7)',
+              color: index < 3 ? 'white' : '255, 255, 255, 0.7)',
               fontWeight: 700,
               fontSize: 14,
             }}
@@ -302,7 +297,7 @@ const Trending = () => {
           label={trader.winRate}
           size="small"
           sx={{
-            background: 'rgba(16, 185, 129, 0.15)',
+            background: '16, 185, 129, 0.15)',
             color: '#10b981',
             fontWeight: 600,
             fontSize: 12,
@@ -314,7 +309,7 @@ const Trending = () => {
           size="small"
           variant="outlined"
           sx={{
-            borderColor: 'rgba(124, 58, 237, 0.3)',
+            borderColor: '124, 58, 237, 0.3)',
             color: '#7c3aed',
             fontSize: 12,
           }}
@@ -357,8 +352,8 @@ const Trending = () => {
           <Paper
             sx={{
               display: 'inline-flex',
-              background: 'rgba(30, 30, 46, 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.1)',
+              background: '30, 30, 46, 0.5)',
+              border: '1px solid 255, 255, 255, 0.1)',
               borderRadius: 3,
               p: 0.5,
             }}
@@ -374,14 +369,14 @@ const Trending = () => {
                   background: timeFilter === period 
                     ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
                     : 'transparent',
-                  color: timeFilter === period ? 'white' : 'rgba(255, 255, 255, 0.7)',
+                  color: timeFilter === period ? 'white' : '255, 255, 255, 0.7)',
                   fontWeight: 600,
                   textTransform: 'none',
                   minWidth: 60,
                   '&:hover': {
                     background: timeFilter === period 
-                      ? 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)'
-                      : 'rgba(255, 255, 255, 0.05)',
+                      ? ''
+                      : '255, 255, 255, 0.05)',
                   }
                 }}
               >
@@ -396,9 +391,7 @@ const Trending = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card
               sx={{
-                background: 'linear-gradient(135deg, #f59e0b20 0%, rgba(30, 30, 46, 0.5) 100%)',
-                border: '1px solid #f59e0b30',
-                borderRadius: 3,
+                background: '',
               }}
             >
               <CardContent>
@@ -407,8 +400,7 @@ const Trending = () => {
                     sx={{
                       width: 48,
                       height: 48,
-                      borderRadius: 2,
-                      background: '#f59e0b20',
+                      
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -432,7 +424,7 @@ const Trending = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card
               sx={{
-                background: 'linear-gradient(135deg, #ef444420 0%, rgba(30, 30, 46, 0.5) 100%)',
+                background: 'linear-gradient(135deg, #ef444420 0%, 30, 30, 46, 0.5) 100%)',
                 border: '1px solid #ef444430',
                 borderRadius: 3,
               }}
@@ -443,8 +435,6 @@ const Trending = () => {
                     sx={{
                       width: 48,
                       height: 48,
-                      borderRadius: 2,
-                      background: '#ef444420',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -468,7 +458,7 @@ const Trending = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card
               sx={{
-                background: 'linear-gradient(135deg, #10b98120 0%, rgba(30, 30, 46, 0.5) 100%)',
+                background: 'linear-gradient(135deg, #10b98120 0%, 30, 30, 46, 0.5) 100%)',
                 border: '1px solid #10b98130',
                 borderRadius: 3,
               }}
@@ -479,8 +469,6 @@ const Trending = () => {
                     sx={{
                       width: 48,
                       height: 48,
-                      borderRadius: 2,
-                      background: '#10b98120',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
@@ -504,7 +492,7 @@ const Trending = () => {
           <Grid item xs={12} sm={6} md={3}>
             <Card
               sx={{
-                background: 'linear-gradient(135deg, #7c3aed20 0%, rgba(30, 30, 46, 0.5) 100%)',
+                background: 'linear-gradient(135deg, #7c3aed20 0%, 30, 30, 46, 0.5) 100%)',
                 border: '1px solid #7c3aed30',
                 borderRadius: 3,
               }}
@@ -515,9 +503,7 @@ const Trending = () => {
                     sx={{
                       width: 48,
                       height: 48,
-                      borderRadius: 2,
-                      background: '#7c3aed20',
-                      display: 'flex',
+                      
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}
@@ -545,7 +531,7 @@ const Trending = () => {
             <Card
               sx={{
                 background: 'linear-gradient(145deg, #1E1E2E 0%, #2D2B42 100%)',
-                border: '1px solid rgba(124, 58, 237, 0.1)',
+                border: '1px solid 124, 58, 237, 0.1)',
                 borderRadius: 3,
               }}
             >
@@ -594,9 +580,7 @@ const Trending = () => {
           <Grid item xs={12} lg={4}>
             <Card
               sx={{
-                background: 'linear-gradient(145deg, #1E1E2E 0%, #2D2B42 100%)',
-                border: '1px solid rgba(124, 58, 237, 0.1)',
-                borderRadius: 3,
+                
                 height: '100%',
               }}
             >
@@ -636,7 +620,7 @@ const Trending = () => {
         </Grid>
 
         {/* Category Breakdown */}
-        <Box sx={{ mt: 6 }}>
+        <Box sx={{ mt: 1 }}>
           <Typography variant="h5" sx={{ mb: 3, fontWeight: 700 }}>
             Trending by Category
           </Typography>
@@ -654,25 +638,19 @@ const Trending = () => {
                 <motion.div whileHover={{ y: -5 }}>
                   <Card
                     sx={{
-                      background: `linear-gradient(135deg, ${category.color}20 0%, rgba(30, 30, 46, 0.5) 100%)`,
-                      border: `1px solid ${category.color}30`,
-                      borderRadius: 3,
                       height: '100%',
                       cursor: 'pointer',
                     }}
                     onClick={() => navigate(`/?category=${category.name.toLowerCase()}`)}
                   >
-                    <CardContent sx={{ textAlign: 'center' }}>
+                    <CardContent sx={''}>
                       <Box
                         sx={{
                           width: 60,
                           height: 60,
-                          borderRadius: '50%',
-                          background: `${category.color}20`,
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          margin: '0 auto 16px',
                         }}
                       >
                         <Typography
@@ -701,7 +679,7 @@ const Trending = () => {
         </Box>
 
         {/* CTA Section */}
-        <Box sx={{ mt: 8, textAlign: 'center' }}>
+        <Box sx={{ mt: 1, textAlign: 'center' }}>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -719,12 +697,12 @@ const Trending = () => {
                 size="large"
                 onClick={() => navigate('/')}
                 sx={{
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  background: '',
                   px: 6,
                   py: 2,
                   fontSize: '1.1rem',
                   '&:hover': {
-                    background: 'linear-gradient(135deg, #764ba2 0%, #667eea 100%)',
+                    background: '',
                   }
                 }}
               >
@@ -735,14 +713,13 @@ const Trending = () => {
                 size="large"
                 onClick={() => navigate('/create')}
                 sx={{
-                  borderColor: 'rgba(124, 58, 237, 0.5)',
-                  color: '#7c3aed',
-                  px: 6,
-                  py: 2,
+                  borderColor: '',
+                  color: 'whites',
+                  
                   fontSize: '1.1rem',
                   '&:hover': {
-                    borderColor: '#7c3aed',
-                    background: 'rgba(124, 58, 237, 0.1)',
+                    borderColor: '',
+                    background: '',
                   }
                 }}
               >

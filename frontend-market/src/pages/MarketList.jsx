@@ -1,4 +1,3 @@
-// src/pages/MarketList.jsx
 import React, { useState } from 'react';
 import {
   Box,
@@ -39,7 +38,7 @@ import {
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
-const MarketList = () => {
+const MarketLists = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filter, setFilter] = useState('all');
   const navigate = useNavigate();
@@ -195,7 +194,7 @@ const MarketList = () => {
           )}
         </Box>
 
-        <CardContent sx={{ pt: 3 }}>
+        <CardContent sx={{ pt: 1 }}>
           {/* Market Category */}
           <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
             <Chip
@@ -587,4 +586,4 @@ const MarketList = () => {
   );
 };
 
-export default MarketList;
+export default MarketLists;

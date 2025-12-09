@@ -5,7 +5,7 @@ import { CssBaseline } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { theme } from './theme/theme';
 import Navbar from './components/Navbar';
-import MarketList from './pages/MarketList';
+import MarketLists from './pages/MarketList';
 import CreateMarket from './pages/CreateMarket';
 import MarketDetail from './pages/MarketDetail';
 import Dashboard from './pages/Dashboard';
@@ -25,7 +25,7 @@ function App() {
               <Navbar />
               <main className="main-content">
                 <Routes>
-                  <Route path="/" element={<MarketList />} />
+                  <Route path="/" element={<MarketLists />} />
                   <Route path="/create" element={<CreateMarket />} />
                   <Route path="/market/:id" element={<MarketDetail />} />
                   <Route path="/dashboard" element={<Dashboard />} />

@@ -12,7 +12,7 @@ import {
 
 export const config = getDefaultConfig({
   appName: 'Prediction Markets',
-  projectId: process.env.REACT_APP_WALLETCONNECT_PROJECT_ID,
+  projectId: 'demo-project-id',
   chains: [
     mainnet,
     sepolia,
@@ -23,7 +23,7 @@ export const config = getDefaultConfig({
     {
       ...mainnet,
       rpcUrls: {
-        default: { http: [`https://mainnet.infura.io/v3/${process.env.REACT_APP_INFURA_ID}`] },
+        default: { http: [`https://mainnet.infura.io/v3/${''}`] },
       },
     },
   ],
