@@ -1,4 +1,4 @@
-// src/components/Navigation/Navbar.tsx
+// src/components/Navigation/Navbar.jsx
 import React, { useState } from 'react';
 import { 
   AppBar, 
@@ -26,7 +26,7 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                 whileHover={{ rotate: 5 }}
                 style={{ display: 'flex', alignItems: 'center' }}
               >
-                <SportsEsports 
+                <MarketIcon 
                   sx={{ 
                     fontSize: 32, 
                     color: theme.palette.primary.main,
