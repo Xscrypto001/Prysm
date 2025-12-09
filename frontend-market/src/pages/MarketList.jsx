@@ -155,26 +155,20 @@ const MarketLists = () => {
       <Card 
         sx={{ 
           height: '100%',
-          background: 'linear-gradient(145deg, #1E1E2E 0%, #2D2B42 100%)',
-          border: '1px solid rgba(124, 58, 237, 0.1)',
-          borderRadius: 3,
+         
           overflow: 'hidden',
           position: 'relative',
-          '&:hover': {
-            borderColor: 'rgba(124, 58, 237, 0.3)',
-            boxShadow: '0 8px 32px rgba(124, 58, 237, 0.2)',
-          }
+          
         }}
       >
         {/* Market Status Badges */}
-        <Box sx={{ position: 'absolute', top: 12, right: 12, display: 'flex', gap: 1 }}>
+        <Box sx={{ position: 'absolute', top: 12, right: 2, display: 'flex', gap: 1 }}>
           {market.trending && (
             <Chip
               icon={<TrendingUp sx={{ fontSize: 16 }} />}
               label="Trending"
               size="small"
               sx={{
-                background: 'rgba(16, 185, 129, 0.15)',
                 color: '#10b981',
                 fontWeight: 600,
               }}
@@ -266,8 +260,7 @@ const MarketLists = () => {
                   transform: 'translateX(-50%)',
                   background: 'rgba(16, 185, 129, 0.9)',
                   color: 'white',
-                  px: 1,
-                  py: 0.5,
+                
                   borderRadius: 1,
                   fontWeight: 600,
                   fontSize: 12,
