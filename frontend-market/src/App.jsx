@@ -15,6 +15,8 @@ import { Web3Provider } from './contexts/Web3Context';
 import './App.css';
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -40,4 +42,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
